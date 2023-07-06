@@ -23,7 +23,6 @@ collections:
       - {label: End Date, name: end, widget: datetime, required: false}
       - {label: All Day, name: allDay, widget: boolean}
       - {label: Description, name: description, widget: text}
-      - {label: Venue, name: venue, widget: text}
       - {label: Link, name: link, widget: string, required: false}
       - {label: Image, name: image, widget: image, required: false}
   - name: site_settings
