@@ -1,9 +1,8 @@
-baseurl = "/"
 languageCode = "fr-fr"
 languageLang = "fr"
 title = "Agenda culturel alternatif en Drôme / Ardèche"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+buildFuture = true
+
+[outputs]
+    section = ["HTML", "JSON"]
