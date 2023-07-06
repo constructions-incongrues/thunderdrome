@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Start Date, name: date, widget: datetime}
-      - {label: End Date, name: end, widget: datetime}
+      - {label: End Date, name: end, widget: datetime, required: false}
       - {label: All Day, name: allDay, widget: boolean}
       - {label: Description, name: description, widget: text}
       - {label: Venue, name: venue, widget: text}
