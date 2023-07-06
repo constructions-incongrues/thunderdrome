@@ -1,9 +1,9 @@
-# backend:
-#   name: git-gateway
-#   branch: main
-
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
+
+# backend:
+#   name: test-repo
 
 media_folder: site/static/img
 public_folder: img
