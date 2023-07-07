@@ -1,9 +1,9 @@
-backend:
-  name: git-gateway
-  branch: main
-
 # backend:
-#   name: test-repo
+#   name: git-gateway
+#   branch: main
+
+backend:
+  name: test-repo
 
 media_folder: site/static/img
 public_folder: img
@@ -23,7 +23,6 @@ collections:
       - {label: End Date, name: end, widget: datetime, required: false}
       - {label: All Day, name: allDay, widget: boolean}
       - {label: Description, name: description, widget: text}
-      - {label: Link, name: link, widget: string, required: false}
       - {label: Image, name: image, widget: image, required: false}
   - name: site_settings
     label: Site Settings

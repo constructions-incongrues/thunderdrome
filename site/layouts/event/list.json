@@ -5,8 +5,8 @@
         "title": "{{ .Title }}",
         "start": "{{ dateFormat "2006-01-02" .Date }}",
         "end": "{{ dateFormat "2006-01-02" .Params.end }}",
-        "allDay": {{ .Params.allday }},
-        "url": "{{ .Params.link }}",
+        "allDay": {{ .Params.allDay }},
+        "url": "{{ .Permalink | absURL }}",
         "description:": {{ .Params.description | jsonify }}
     }
     {{ end }}
