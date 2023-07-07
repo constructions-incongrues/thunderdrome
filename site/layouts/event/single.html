@@ -11,7 +11,9 @@
     <p>Event detail:</p>
     <h2>{{ .Title }}</h2>
     <p>Start: {{ dateFormat "2006-01-02" .Date }}</p>
-    <p>End: {{ dateFormat "2006-01-02" .Params.end }}</p>
+    {{ with .Params.end }}
+    <p>End: {{- dateFormat "2006-01-02" . -}}</p>
+    {{ end }}
     <p>Description: {{ .Params.description }}</p>
     <p>url: {{ .Permalink | absURL }}</p>
 
