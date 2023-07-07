@@ -5,4 +5,5 @@ end: ""
 allDay: true
 description: vdsvsdgvdfsbv
 venue: bfbredber
+image: img/image.png
 ---
