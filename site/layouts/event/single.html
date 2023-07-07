@@ -53,7 +53,7 @@ h1 .rotate-left { rotate: 15deg; }
     <h3>{{ .Title }}</h3>
     <p>Début: {{ dateFormat "2006-01-02" .Date }}</p>
     {{ with .Params.end }}
-    <p>Fin: {{- dateFormat "2006-01-02" . -}}</p>
+    <p>Fin: {{ dateFormat "2006-01-02" . -}}</p>
     {{ end }}
     <p>{{ .Params.description }}</p>
     {{ with .Params.link }}

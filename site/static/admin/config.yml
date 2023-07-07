@@ -19,8 +19,8 @@ collections:
     create: true
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Start Date, name: date, widget: datetime}
-      - {label: End Date, name: end, widget: datetime, required: false}
+      - {label: Start Date, name: date, widget: date}
+      - {label: End Date, name: end, widget: date, required: false}
       - {label: Description, name: description, widget: text}
       - {label: Flyer, name: flyer, widget: image, required: false}
       - {label: Link, name: link, widget: string, required: false}
