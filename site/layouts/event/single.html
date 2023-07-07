@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Title}}</title>
-</head>
-<body>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>THUNDERDROME</title>
+    <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: gainsboro;
+}
 
-    <p>Event detail:</p>
+
+#calendar {
+  max-width: 1200px;
+  margin: 10px auto;
+  margin-top: 1em;
+}
+
+.R {
+  color: magenta;
+}
+
+.skull {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*
+i wish this required CSS was better documented :(
+https://github.com/FezVrasta/popper.js/issues/674
+derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
+*/
+a { text-decoration: none; }
+body { text-align: center; }
+h1 { font-size: 6em; margin-bottom: 0.5em;}
+h1 .rotate-left { rotate: 15deg; }
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <header>
+        <h1>
+          <span class="rotate-left">THUNDE</span><span class="R">☈</span>D<span class="R">☈</span><a target="_blank" title="Ajouter un événement" class="skull" href="/admin/#/collections/event/new">☠</a>ME
+        </h1>
+		<h2>Agenda culturel alternatif en Drôme / Ardèche.</h2>
+      </header>
+
+      <main>
     <h2>{{ .Title }}</h2>
-    <p>Start: {{ dateFormat "2006-01-02" .Date }}</p>
+    <p>Début: {{ dateFormat "2006-01-02" .Date }}</p>
     {{ with .Params.end }}
-    <p>End: {{- dateFormat "2006-01-02" . -}}</p>
+    <p>Fin: {{- dateFormat "2006-01-02" . -}}</p>
     {{ end }}
-    <p>Description: {{ .Params.description }}</p>
-    <p>url: <a href="{{ .Permalink | absURL }}">{{ .Permalink | absURL }}</a></p>
+    <p>{{ .Params.description }}</p>
+    {{ with .Params.link }}
+    <p><a href="{{ . }}">{{ . }}</a></p>
     <p>
         <img src="/{{ .Params.flyer }}">
     </p>
+</main>
 
-</body>
+<footer>
+  <span>
+    Ce projet est développé par les <a href="https://www.constructions-incongrues.net">Constructions Incongrues</a>.
+    Il est hébergé par <a href="https://www.pastis-hosting.net">Pastis Hosting</a>.
+  </span>
+</footer>
+</div>
+
 </html>

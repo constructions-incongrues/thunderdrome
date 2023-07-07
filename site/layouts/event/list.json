@@ -7,7 +7,6 @@
         {{ with .Params.end }}
         "end": "{{- . -}}",
         {{ end }}
-        "allDay": {{ .Params.allDay }},
         "url": "{{ .Permalink | absURL }}",
         "description:": {{ .Params.description | jsonify }}
     }
