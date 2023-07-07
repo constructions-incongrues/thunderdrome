@@ -58,6 +58,7 @@ h1 .rotate-left { rotate: 15deg; }
     <p>{{ .Params.description }}</p>
     {{ with .Params.link }}
     <p><a href="{{ . }}">{{ . }}</a></p>
+    {{ end }}
     <p>
         <img src="/{{ .Params.flyer }}">
     </p>
