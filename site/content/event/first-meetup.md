@@ -1,13 +1,17 @@
 ---
-title: "First Meetup"
+output:
+  - JSON
+  - HTML
+title: First Meetup
 date: 2023-07-19T22:05:05+08:00
-end: 2023-07-21T23:05:05+08:00
-output: ["JSON", "HTML"]
 type: event
-allday: true
+end: 2023-07-21T23:05:05+08:00
+allDay: true
 description: |-
   fezrfrez
   grgerg  g
   reger
   gergerg
+image: img/toothworm2.png
+allday: true
 ---
