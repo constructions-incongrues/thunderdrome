@@ -46,11 +46,11 @@ h1 .rotate-left { rotate: 15deg; }
         <h1>
           <span class="rotate-left">THUNDE</span><span class="R">☈</span>D<span class="R">☈</span><a target="_blank" title="Ajouter un événement" class="skull" href="/admin/">☠</a>ME
         </h1>
-		<h2>Agenda culturel alternatif en Drôme / Ardèche.</h2>
+		    <h2>{{ .Title }}</h2>
+        <h2><a href="/">← </a></h2>
       </header>
 
       <main>
-    <h3>{{ .Title }}</h3>
     <p>Début: {{ dateFormat "2006-01-02" .Date }}</p>
     {{ with .Params.end }}
     <p>Fin: {{ dateFormat "2006-01-02" . -}}</p>
