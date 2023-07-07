@@ -21,16 +21,6 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: Start Date, name: date, widget: datetime}
       - {label: End Date, name: end, widget: datetime, required: false}
-      - {label: All Day, name: allDay, widget: boolean}
+      - {label: All Day, name: allDay, widget: boolean, required: false}
       - {label: Description, name: description, widget: text}
-      - {label: Image, name: image, widget: image, required: false}
-  - name: site_settings
-    label: Site Settings
-    files:
-      - file: site/config.toml
-        label: Hugo Config
-        name: config
-        editor:
-          preview: false
-        fields:
-          - {label: Site Title for Browser Tab, name: title, widget: string}
+      - {label: Flyer, name: flyer, widget: image, required: false}

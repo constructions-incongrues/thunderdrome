@@ -12,6 +12,6 @@ description: |-
   grgerg  g
   reger
   gergerg
-image: img/toothworm2.png
+flyer: img/toothworm2.png
 allday: true
 ---

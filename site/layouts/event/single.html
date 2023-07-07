@@ -15,7 +15,10 @@
     <p>End: {{- dateFormat "2006-01-02" . -}}</p>
     {{ end }}
     <p>Description: {{ .Params.description }}</p>
-    <p>url: {{ .Permalink | absURL }}</p>
+    <p>url: <a href="{{ .Permalink | absURL }}">{{ .Permalink | absURL }}</a></p>
+    <p>
+        <img src="/{{ .Params.flyer }}">
+    </p>
 
 </body>
 </html>
