@@ -21,6 +21,7 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: Start Date, name: date, widget: date}
       - {label: End Date, name: end, widget: date, required: false}
+      - {label: Place, name: place, widget: string, required: false}
       - {label: Description, name: description, widget: text}
       - {label: Flyer, name: flyer, widget: image, required: false}
       - {label: Link, name: link, widget: string, required: false}
