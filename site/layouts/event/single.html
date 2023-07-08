@@ -37,6 +37,10 @@ a { text-decoration: none; }
 body { text-align: center; }
 h1 { font-size: 6em; margin-bottom: 0.5em;}
 h1 .rotate-left { rotate: 15deg; }
+main {
+  margin-left: 20em;
+  margin-right: 20em;
+}
     </style>
   </head>
   <body>
@@ -56,7 +60,9 @@ h1 .rotate-left { rotate: 15deg; }
     <p>Fin: {{ dateFormat "2006-01-02" . -}}</p>
     {{ end }}
     <p>Lieu: {{ .Params.place }}</p>
-    <p>{{ .Params.description }}</p>
+
+    {{ .Params.description | markdownify }}
+
     {{ with .Params.link }}
     <p><a href="{{ . }}">{{ . }}</a></p>
     {{ end }}
