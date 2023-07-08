@@ -5,4 +5,5 @@ end: 2023-10-01
 description: Festival de Lutherie Sauvage
 flyer: img/microcontact_logo.jpg
 link: https://microcontact.incongru.org
+place: Crest
 ---
